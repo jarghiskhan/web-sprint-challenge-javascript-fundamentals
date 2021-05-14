@@ -17,7 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+//Because it is scoped within the parent function. Nested function can pull from MyFunction. MyFunction would not be able to pull variables from Nested.
 
 
 
@@ -28,9 +28,13 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
+function summation(number) {
+  let total=0;
   /*Your Code Here*/
-
+    for(let i=0; i <= number; i++){
+      total = i+ total;
+    }
+    return total;
   }
  
 
@@ -56,8 +60,10 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function animalNames(array){
+    const stringArray = [];
+    array.forEach(element => stringArray.push(`name: ${element.animal_name}, scientific: ${element.scientific_name}`));
+    return stringArray;
   }
   
 
@@ -67,7 +73,7 @@ const zooAnimals = [
   For example: ['jackal, asiatic', .....]
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
+  function lowerCaseNames(){
     /*Your Code Here*/
   }
   
