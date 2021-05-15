@@ -28,14 +28,26 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+  -they both iterate through every element of an array. 
+  -.forEach doesn't return anything unless told to; allows for mutate an array. 
+  -.map creates an array and returns the values into the array
 
 2. Explain the difference between a callback and a higher order function.
+    -higher order function is a function that has other functions passed into.
+    -callbacks are the smaller functions that are called by a higher order function 
 
 3. Can you explain what a closure is and how you used it in the counter function? 
+    -closure is created when function calls for a variable outside itself.
+    -I pulled in the variable total to keep a running tally of previous sums. When I pulled it into the for loop that created a closure.
 
 4. Describe the four principles of the 'this' keyword.
+    -Global: the window or global scope. Defined by the global object; whatever that is set to. Try to avoid.
+    -Explicit:  Allows us to explicitly define the variable we are scoped to. Prevents ambiguity of which object we are referring to.
+    -Implicit: Scoped by the object to the left in dot notation. eg 'myObj.function', myObj is the scope
+    -New: Part of a constructor function. Binds the .this to the new instance of the object.
 
 5. Why do we need super() in an extended class?
+    -Super allows us to access a parent's properties and methods from a child.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
